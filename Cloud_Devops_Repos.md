@@ -44,3 +44,87 @@ If you find these helpful...
 
 https://www.linkedin.com/posts/vsadhwani_5-best-github-repos-to-help-you-pass-cloud-activity-7299118834970497024-_sTb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
 
+*******************
+
+
+Here’s a concise AWS DevOps Cheat Sheet to help you quickly recall important tools, services, and practices:
+
+⸻
+
+1. Core AWS Services for DevOps
+
+Service Purpose
+EC2 Scalable compute capacity
+S3 Object storage for artifacts, logs, etc.
+IAM Manage users, roles, and permissions
+VPC Isolated network configuration
+CloudFormation Infrastructure as Code (IaC)
+Lambda Serverless compute
+ECS / EKS Container orchestration
+RDS / DynamoDB Managed databases
+CloudWatch Monitoring, logging, alarms
+CloudTrail Auditing API calls
+
+
+
+⸻
+
+2. DevOps Tools on AWS
+
+Tool/Service Use Case
+CodeCommit Git-based source control
+CodeBuild CI build service
+CodeDeploy Automated deployments
+CodePipeline End-to-end CI/CD automation
+CodeArtifact Artifact repository (e.g., npm, Maven)
+Elastic Beanstalk Easy app deployment & environment mgmt
+AWS SAM Serverless Application Model (IaC for Lambda)
+
+
+
+⸻
+
+3. CI/CD Workflow Example
+ 1. Code pushed to CodeCommit
+ 2. CodePipeline triggers
+ 3. CodeBuild compiles/tests
+ 4. CodeDeploy deploys to EC2 / ECS / Lambda
+
+⸻
+
+4. Infrastructure as Code
+ • CloudFormation: YAML/JSON templates
+ • Terraform (3rd-party): Multi-cloud support
+ • AWS CDK: Define infrastructure in code (Python, TypeScript, etc.)
+
+⸻
+
+5. Monitoring & Logging
+
+Tool Function
+CloudWatch Metrics, logs, custom dashboards
+CloudTrail API logging & auditing
+X-Ray Distributed tracing
+
+
+
+⸻
+
+6. Security Best Practices
+ • Use IAM Roles instead of access keys
+ • Enable MFA for user accounts
+ • Apply least privilege access
+ • Use Secrets Manager or Parameter Store for secrets
+ • Enable GuardDuty, Inspector for threat detection
+
+⸻
+
+7. Cost & Performance Optimization
+ • Trusted Advisor: Best practice checks
+ • Compute Optimizer: Right-sizing recommendations
+ • Use Spot Instances for cost savings
+ • Set budgets & alarms
+
+⸻
+https://www.linkedin.com/posts/mozahid-husain_awsdevops-activity-7317176527333269504-VbxK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
+
