@@ -98,4 +98,78 @@ Explanation:
 
 https://www.linkedin.com/posts/sahil-agrawal-profile_java-springboot-jar-activity-7316136626986885120-GCb1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
 
+***************
+
+🧵 From main() to Microservices: Why Simple Java Programs Stop and Spring Boot Apps Keep Running
+
+When I first started learning Java, I wrote simple programs like this:
+public class MyFirstProgram {
+ public static void main(String[] args) {
+ System.out.println("Hello, Java!");
+ }
+}
+👉 It printed output, then exited immediately.
+This made perfect sense — you write code, it executes line by line, and the JVM exits once it’s done.
+
+🤔 But Then Came Spring Boot...
+I built my first backend app using Spring Boot and noticed something very different.
+@SpringBootApplication
+public class MyApp {
+ public static void main(String[] args) {
+ SpringApplication.run(MyApp.class, args);
+ }
+}
+I ran it — and it didn’t stop! It kept running until I manually terminated it.
+Even stranger, some methods didn’t run at all — until I called an API like /hello.
+
+ That got me thinking: Why does this happen?
+
+🔍 What’s Actually Happening Behind the Scenes?
+
+When you build real-world applications (like REST APIs), the structure is very different. Here’s what Spring Boot does:
+✅ 1. Starts an Embedded Web Server
+(Spring Boot uses Tomcat or Jetty by default)
+This turns your app into a web server that can listen to incoming HTTP requests — just like a website.
+✅ 2. Initializes the Spring Context
+It scans for beans, controllers, services, and loads the entire application structure.
+✅ 3. Waits for Requests
+The app stays alive, listening on port 8080 (or any custom port you define), ready to respond.
+
+🎯 Execution Flow: Startup vs On-Demand
+Let’s break this into two categories:
+🔸 Code That Runs on Startup:
+main() method
+@PostConstruct methods
+CommandLineRunner or ApplicationRunner implementations
+Auto-configured beans
+🔹 Code That Runs On-Demand:
+@GetMapping, @PostMapping, etc. (i.e., your API methods)
+These are not executed until an actual request comes in
+
+🔁 Real Example:
+@RestController
+public class HelloController {
+
+ @GetMapping("/hello")
+ public String sayHello() {
+ System.out.println("sayHello() called");
+ return "Hello from API!";
+ }
+}
+
+App starts ✅
+This method doesn't run yet ❌
+You call /hello in Postman or browser ➡️ Method runs ✅
+This is the key difference: your code now lives inside a continuously running application, and only runs when a request triggers it.
+
+🧠 Final Thoughts
+This transition — from simple main() programs to real-world request-driven applications — is a huge milestone in backend development.
+Understanding how your app waits, listens, and responds is essential when moving into frameworks like Spring Boot, Java EE, or even Node.js and Django.
+If you're just starting this journey, remember:
+Not all Java code runs immediately — some of it is waiting for a reason. 🔁
+
+https://www.linkedin.com/posts/jitendraknishad_java-javadevelopers-springboot-activity-7327575642718326785-x5gc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
+
+SpringBoot keeps running only if you use the spring-boot-starter-web dependency. If you use spring-boot-starter instead, without the -web part, no web server will be started, and the SpringBoot app will terminate, just like the simple program with the main method. This way it's also possible to implement Batch Job Applications with Spring Boot, which will terminate when their work is done.
+
 
