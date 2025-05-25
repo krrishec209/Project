@@ -94,3 +94,113 @@ If you're aiming to become a technically strong backend developer, especially in
 This is how I’m leveling up — step-by-step and topic-by-topic. If you're on a similar path, save this list and tackle one concept each day.
 
 https://www.linkedin.com/posts/ziaulhaqsyed07_java-microservices-springboot-activity-7315946640857612288-39SS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
+
+
+***********************
+
+If you want to become a better backend engineer, start with this crash course on distributed systems ↓
+
+1. Introduction 
+ https://lnkd.in/g2mPQrta
+
+2. RPC and Threads 
+ https://lnkd.in/gH2R4UE4
+
+3. GFS 
+ https://lnkd.in/gc2VjMT4
+
+4. Primary-Backup Replication 
+ https://lnkd.in/gcHQGSSi
+
+5. Go, Threads, and Raft 
+ https://lnkd.in/gTiqu4Mu
+
+6. Fault Tolerance: Raft 1 
+ https://lnkd.in/gft98xpE
+
+7. Fault Tolerance: Raft 2 
+ https://lnkd.in/gqsPwYhi
+
+8. Zookeeper 
+ https://lnkd.in/gKEWzeFg
+
+9. More Replication, CRAQ 
+ https://lnkd.in/gfwbg4Rb
+
+10. Cloud Replicated DB, Aurora 
+ https://lnkd.in/gfZk6_vu
+
+11. Cache Consistency: Frangipani 
+ https://lnkd.in/gg_HcXZB
+
+12. Distributed Transactions 
+ https://lnkd.in/gRk_EStK
+
+13. Spanner 
+ https://lnkd.in/gPvdShgp
+
+14. Optimistic Concurrency Control 
+ https://lnkd.in/gNZ9rFm9
+
+15. Big Data: Spark 
+ https://lnkd.in/gAG8XQUg
+
+16. Cache Consistency: Memcached at Facebook 
+ https://lnkd.in/gtrj6UuS
+
+17. COPS, Causal Consistency 
+ https://lnkd.in/gq6m4_NY
+
+18. Fork Consistency, Certificate Transparency 
+ https://lnkd.in/gTCwqnG8
+
+19. Bitcoin 
+ https://lnkd.in/gFRv5uPm
+
+20. Blockstack 
+ https://lnkd.in/gi5c-CWB
+
+21. Distributed Transactions: Two-Phase Commit Protocol 
+ https://lnkd.in/g-8zG8qJ
+
+22. Implementing Distributed Transactions using Two-Phase Commit Protocol 
+ https://lnkd.in/gGEVEFKf
+
+23. LCR Algorithm for Leader Election in Distributed Systems 
+ https://lnkd.in/gcCgWz3z
+
+24. HS Algorithm for Leader Election in Distributed Systems 
+ https://lnkd.in/gAHZZhSy
+
+25. TimeSlice Algorithm for Leader Election in Distributed Systems 
+ https://lnkd.in/gmvp2qtm
+
+26. FloodMax Algorithm for Leader Election in Distributed Systems 
+ https://lnkd.in/gCFz_HwW
+
+27. Synchronous Breadth First Search Algorithm to Power Broadcast in Distributed Systems 
+ https://lnkd.in/gzviegSQ
+
+28. Distributed Shortest-Path Bellman Ford Algorithm in Distributed Systems 
+ https://lnkd.in/gcqARFue
+
+29. Minimum Spanning Tree in Distributed Systems – GHS Algorithm and Its Applications 
+ https://lnkd.in/ghqDQpzq
+
+30. Unsolvable Distributed Consensus and The Two Generals' Problem 
+ https://lnkd.in/gNmfN6DW
+
+31. FloodSet Algorithm – Distributed Consensus Even When Processes Crash 
+ https://lnkd.in/gh5W6FaX
+
+32. Exponential Information Gathering EIG Algorithm 
+ https://lnkd.in/gVhEeqqN
+
+33. Exponential Information Gathering EIG Algorithm 
+ https://lnkd.in/gZAHG33g
+
+34. Two-Phase Commit to Power-Distributed Transactions 
+ https://lnkd.in/g5vxGZih
+
+
+https://www.linkedin.com/posts/ravindrabhargava_if-you-want-to-become-a-better-backend-engineer-activity-7330583852119216128-E0yv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
