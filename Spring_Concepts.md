@@ -172,4 +172,119 @@ https://www.linkedin.com/posts/jitendraknishad_java-javadevelopers-springboot-ac
 
 SpringBoot keeps running only if you use the spring-boot-starter-web dependency. If you use spring-boot-starter instead, without the -web part, no web server will be started, and the SpringBoot app will terminate, just like the simple program with the main method. This way it's also possible to implement Batch Job Applications with Spring Boot, which will terminate when their work is done.
 
+******************
+
+Spring beans don’t all behave the same way. 
+
+Their scope decides how often they’re created, how long they live, and who gets to use them.
+
+Let’s break it down.
+
+𝗦𝗶𝗻𝗴𝗹𝗲𝘁𝗼𝗻 𝗦𝗰𝗼𝗽𝗲:
+
+It is the default scope. Creates a single, shared instance per container, which is cached and reused for all requests.
+
+Lifecycle: Created at container startup (eager) or on first use (lazy); reused for every injection.
+
+Used for stateless services or shared configuration.
+
+✅ Pros
+- Memory-efficient
+- Shared and consistent instance
+
+❌ Cons
+- Not thread-safe for mutable state
+- Shared state may cause unintended side effects
+
+𝗣𝗿𝗼𝘁𝗼𝘁𝘆𝗽𝗲 𝗦𝗰𝗼𝗽𝗲: 
+
+It creates a new instance each time the bean is requested. 
+
+Lifecycle: Created at injection time. Spring doesn't manage the full lifecycle, only creating and configuring the bean. Cleanup is the user’s responsibility.
+
+Used for non-thread-safe components, multi-threaded, or stateful logic.
+
+✅ Pros
+- Each request gets a fresh instance
+- Safer for mutable state and concurrency
+- Eliminate shared state concerns
+
+❌ Cons
+- Higher memory usage
+- Spring does not manage the full lifecycle
+
+𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗦𝗰𝗼𝗽𝗲:
+
+Creates one instance per HTTP request (only in Web-aware ApplicationContext).
+
+Lifecycle: Created at the start of the request, destroyed at the end.
+
+Used for web layer components tied to a single request.
+
+✅ Pros
+- Isolated per HTTP request
+- No risk of data leaking between requests
+
+❌ Cons
+- Requires a web-aware context
+- Needs proxies when injected into singleton beans
+
+𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗦𝗰𝗼𝗽𝗲:
+
+Creates one instance per HTTP session (only in Web-aware ApplicationContext).
+
+Lifecycle: Created on session creation and destroyed on session timeout/invalidation.
+
+Used for user-specific data that persists across multiple requests.
+
+✅ Pros
+- Tracks user-specific state across requests
+- Session-bound lifecycle
+
+❌ Cons
+- Memory overhead and leaks if sessions linger
+- Stale references after session timeout
+
+𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗦𝗰𝗼𝗽𝗲:
+
+Creates one instance per ServletContext (only in Web-aware ApplicationContext).
+
+Lifecycle: Exists for the lifetime of the web application.
+
+Used for application-wide state or resources.
+
+✅ Pros
+- Shared across all users and sessions
+- Centralized configuration
+
+❌ Cons
+- Shared state can be risky if it’s not thread-safe
+- Requires a servlet container
+
+𝗪𝗲𝗯𝗦𝗼𝗰𝗸𝗲𝘁:
+
+Creates one instance per WebSocket (only in Web-aware ApplicationContext).
+
+Lifecycle: Managed by the WebSocket session lifecycle.
+
+Used for maintaining stateful interaction over a WebSocket connection.
+
+✅ Pros
+- Tracks WebSocket user session state
+- Useful for real-time communication
+
+❌ Cons
+- Requires WebSocket configuration
+- Limited to WebSocket-based systems
+
+Choosing the right scope saves headaches later, such as during debugging, memory leaks, or thread issues.
+
+Keep this in your toolbox as you build smarter Spring applications.
+
+Follow Lahiru Liyanapathirana for more posts like this.
+
+![image](https://github.com/user-attachments/assets/07c9452d-e62a-4936-b457-7d627faf2dc6)
+
+https://www.linkedin.com/posts/lahiru-liyanapathirana_spring-beans-dont-all-behave-the-same-way-activity-7345790891497832448-ARa0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
+
 
