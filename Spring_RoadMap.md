@@ -74,3 +74,43 @@ Stay curious, stay hungry, and keep building.
 Follow Abhay Singh 
 
 https://www.linkedin.com/posts/abhay-singh-a64b89192_softwareengineering-coding-programming-activity-7333859662678630402-r8gE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
+
+***********************
+
+🚀🚀Spring Bean Life Cycle — Made Simple!
+📌 A must-know for every Java & Spring Boot developer.
+Ever wondered what happens behind the scenes when a Spring bean is created? Understanding the Bean Life Cycle helps you write cleaner, more efficient code — and it’s super useful during debugging too!
+Here’s the life cycle in simple steps:
+1️⃣ Instantiation – Constructor is called
+ 2️⃣ Dependency Injection – Properties are set
+ 3️⃣ Aware Interfaces – Like BeanNameAware, ApplicationContextAware
+ 4️⃣ BeanPostProcessor – Logic before & after initialization
+ 5️⃣ Initialization – via @PostConstruct, afterPropertiesSet() or custom init
+ 6️⃣ Destruction – via @PreDestroy, DisposableBean, or custom destroy method
+📷 Check out the attached visual — it maps each step clearly. Great for interviews and real-world use!
+💬 Drop a comment if you’ve used any of these hooks! Or tag someone who's diving into Spring Boot!
+
+
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/74553596-59c9-4426-86bb-d0e61d627384" />
+
+
+
+Spring Boot Roadmap 2025: The Complete Guide for Backend Developers 🚀
+
+ Learn how to master Spring Boot in 2025 with this complete roadmap covering:
+
+ ✅ Java Fundamentals
+ ✅ REST APIs & Controllers
+ ✅ Spring Security & JWT
+ ✅ Data Access (JPA, JDBC, etc.)
+ ✅ DevOps, Docker & Cloud Deployment
+ ✅ Advanced topics like Kafka, OAuth2, Testing & More!
+This roadmap is your one-stop guide to becoming a Spring Boot pro. 🔥
+ Save it. Share it. Grow with it! 💡
+
+🚀 Stay tuned with Niraj Kushwaha for crisp and practical tech content!
+
+<img width="1847" height="1335" alt="image" src="https://github.com/user-attachments/assets/ea374263-a80b-42ce-be34-4c60cd357125" />
+
+
+https://www.linkedin.com/posts/niraj-kumar-7a4ab4203_springboot-javadeveloper-backenddevelopment-activity-7340940071761584128-85-8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
