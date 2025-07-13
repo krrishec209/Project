@@ -198,4 +198,49 @@ How would you automatically scale the Pods?
 
 22. https://www.linkedin.com/posts/jyoti-sharma-14264621b_basic-interview-questions-activity-7317041540596473856-HLL9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
 
+**************
+
+3 GitHub repos that cover everything you need to learn AWS DevOps and build portfolio projects
+(based on your expertise level)
+
+One offers a structured daily learning path. 
+Another is a curated reference hub. And the third helps you build real-world AWS projects for your portfolio.
+
+**Learning Resources
+1. Awesome AWS by Donne Martin
+→ Comprehensive, curated list of AWS resources, from services to architecture best practices. 
+→ Essential hub for developers, architects, and cloud pros worldwide.
+Link: https://lnkd.in/dBYbukmR
+
+2. AWS Devops zero-to-hero by Abhishek Veeramalla
+→ A structured daily learning path focused on AWS DevOps services. Includes practical labs
+→ Covers interview questions, and real-world scenarios like CI/CD pipelines, EKS, ECS, CloudFormation, and more.
+Link: https://lnkd.in/dGMgrwSa
+
+**Build Your Portfolio
+3. AWS-Projects-Portfolio by Shubham Murti
+A well-organized collection of hands-on AWS projects, categorized by expertise level:
+→ Level 100 – Introductory
+→ Level 200 – Intermediate
+→ Level 300 – Advanced
+→ Level 400 – Expert
+Link: https://lnkd.in/dEkzeHjA
+
+Project examples include:
+- Deploying a 3-tier architecture on EC2
+- Building serverless applications with Lambda and API Gateway
+- Setting up a full CI/CD pipeline using CodePipeline and CodeBuild
+- Running containers on ECS Fargate with load balancing and autoscaling and so many more use cases
+
+Kudos to the authors for curating these fantastic resources for the community!
+
+Whether you're preparing for interviews, certifications, or just building practical skills, these repos are a great place to start.
+
+So go on, save these. Fork them. And start building! The best way to learn any cloud is by doing.
+
+• • •
+I regularly share bite-sized insights on Cloud & DevOps (through my newsletter as well) — if you're finding them helpful, hit follow (Vishakha) and feel free to share it so others can learn too!
+
+https://www.linkedin.com/posts/vsadhwani_3-github-repos-that-cover-everything-you-activity-7349829843200409601-F_cU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
+
 
